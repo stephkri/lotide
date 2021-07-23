@@ -12,10 +12,10 @@ if there is a key in itemsToCoun
 */
 
 const countOnly = function(allItems, itemsToCount) {
-  const results = {}
+  const results = {};
   for (const item of allItems) { // item is an element in the array allItems
     console.log(item);
-    if(itemsToCount[item]) { // if there is a key in itemsToCount with the same name as the selected element in allItems
+    if (itemsToCount[item]) { // if there is a key in itemsToCount with the same name as the selected element in allItems
       if (results[item]) { // if there has already been (in a previous iteration of the loop) a key-value pair added to the results object
         results[item] += 1; // increase the value of the key in the results object by 1
       } else {
