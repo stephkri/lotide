@@ -6,9 +6,9 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-function isLetter(c) {
-  return c.toLowerCase() != c.toUpperCase();
-}
+const isLetter = function(c) {
+  return c.toLowerCase() !== c.toUpperCase();
+};
 
 const countLetters = function(string) {
   const results = {};
