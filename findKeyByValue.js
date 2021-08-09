@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require("./assertEqual");
 
 const findKeyByValue = function(obj, val) {
   for (key in obj) {
@@ -14,6 +8,8 @@ const findKeyByValue = function(obj, val) {
   }
 };
 
+module.exports = findKeyByValue;
+/*
 const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
@@ -26,7 +22,7 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "Brooklyn Nine-Nine"), "comedy");
 
 // node findKeyByValue.js
 
-/*
+
 must match up the val argument with the value of a key
 if val === obj.key?
 also somehow match up object.keys array with the key of the actual object
