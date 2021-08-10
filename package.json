@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@stephane.krims/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "The version of Lotide created by Stéphane Krims for Lighthouse Labs",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/stephkri/lotide.git"
   },
-  "author": "",
+  "author": "Stéphane Krims <stephane.krims@hotmail.ca>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stephkri/lotide/issues"
