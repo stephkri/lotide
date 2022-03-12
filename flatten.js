@@ -32,11 +32,6 @@ const flatten = function(array) {
   for (item of array) {
     if (Array.isArray(item)) {
       flattenPush(newArray, item);
-      /*
-      for (subitem of item) {
-        newArray.push(subitem);
-      }
-      */
     } else {
       newArray.push(item);
     }
