@@ -21,6 +21,12 @@ const assertArraysEqual = function(array1, array2) {
 */
 const assertArraysEqual = require("./assertArraysEqual");
 
+const flattenPush = function(array, item) {
+  for (const subitem of item) {
+    array.push(subitem);
+  }
+}
+
 const flatten = function(array) {
   let newArray = [];
   for (item of array) {
@@ -37,7 +43,6 @@ const flatten = function(array) {
 
 module.exports = flatten;
 
-/*
+
 assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
 console.log(flatten([1, [2, [3, 4]], 5, [6]]));
-*/
