@@ -29,7 +29,7 @@ const flattenPush = function(array, item) {
 
 const flatten = function(array) {
   let newArray = [];
-  for (item of array) {
+  for (const item of array) {
     if (Array.isArray(item)) {
       flattenPush(newArray, item);
     } else {
