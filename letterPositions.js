@@ -1,9 +1,10 @@
 const assertArraysEqual = require("./assertArraysEqual");
 
+const isLetter = function(c) {
+  return c.toLowerCase() !== c.toUpperCase();
+};
+
 const letterPositions = function(sentence) {
-  const isLetter = function(c) {
-    return c.toLowerCase() !== c.toUpperCase();
-  };
   const results = {};
   for (let i = 0; i < sentence.length; i++) {
     const char = sentence[i];
